@@ -24,10 +24,10 @@ def update_property_by_id(property_id, body):
         return None
     property.street1 = body.get("street1", property.street1)
     property.street2 = body.get("street2", property.street2)
-    property.street_number = body.get("street_number", property.street_number)
+    property.street_number = body.get("streetNumber", property.street_number)
     property.city = body.get("city", property.city)
     property.state = body.get("state", property.state)
-    property.zip_code = body.get("zip_code", property.zip_code)
+    property.zip_code = body.get("zipCode", property.zip_code)
     property.description = body.get("description", property.description)
     db.session.commit()
     return property.serialize()

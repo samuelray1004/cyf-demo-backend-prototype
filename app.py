@@ -35,10 +35,10 @@ def create_property():
     property = dao.create_property(
         street1 = body.get("street1", "EMPTY"),
         street2 = body.get("street2", "EMPTY"),
-        street_number = body.get("street_number", "EMPTY"),
+        street_number = body.get("streetNumber", "EMPTY"),
         city = body.get("city", "EMPTY"),
         state = body.get("state", "EMPTY"),
-        zip_code = body.get("zip_code", "EMPTY"),
+        zip_code = body.get("zipCode", "EMPTY"),
         description = body.get("description", "EMPTY")
     )
     return success_response(property, 201)

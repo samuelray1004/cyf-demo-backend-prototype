@@ -27,9 +27,9 @@ class Property(db.Model):
             "id": self.id,
             "street1": self.street1,
             "street2": self.street2,
-            "street_number": self.street_number,
+            "streetNumber": self.street_number,
             "city": self.city,
             "state": self.state,
-            "zip_code": self.zip_code,
+            "zipCode": self.zip_code,
             "description": self.description
         }
